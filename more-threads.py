@@ -14,16 +14,10 @@ for i in range(5):
     threads.append(t)
     t.start()
     print('{} has started \n'.format(t.name))
- 
- 
- 
     
 for i in threads:
-
     i.join()
     
 end = time.time()
-
-
 
 print('time is {}'.format(end - start))
